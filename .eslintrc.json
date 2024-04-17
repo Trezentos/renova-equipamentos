@@ -1,0 +1,10 @@
+{
+    "extends": "@rocketseat/eslint-config/react",
+    "rules": {
+        "camelcase": "off",
+        "no-unused-vars": "off",
+        "prefer-const": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-explicit-any": "warn"
+    }
+}
