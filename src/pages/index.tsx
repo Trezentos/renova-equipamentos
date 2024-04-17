@@ -5,7 +5,7 @@ import MainSection from '@/components/HomeSections/MainSection'
 import MotivationSection from '@/components/HomeSections/MotivationSection'
 import WhatsButton from '@/components/WhatsButton'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 export default function Home() {
   const ref = useRef(null)

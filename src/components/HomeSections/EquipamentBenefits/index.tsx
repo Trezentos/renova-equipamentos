@@ -1,10 +1,11 @@
-import { Card, Cards, Container, Content, VantagesImages } from './styles'
+import { Container, Content, VantagesImages } from './styles'
 import { cardsContent } from './consts'
 import Image from 'next/image'
 import vantage1 from '../../../assets/vantage-1.png'
 import vantage2 from '../../../assets/vantage-2.png'
 import vantage3 from '../../../assets/vantage-3.png'
 import vantage4 from '../../../assets/vantage-4.png'
+import EquipamentsSlider from '@/components/HomeSections/EquipamentBenefits/Slider'
 
 function EquipamentsBenefits() {
   return (
@@ -15,19 +16,7 @@ function EquipamentsBenefits() {
           Equipamentos?
         </h1>
 
-        <Cards>
-          {cardsContent.map((item) => (
-            <Card key={item.title}>
-              <div>
-                <div className="icon-div">{item.icon}</div>
-                <div className="description-card">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </Cards>
+        <EquipamentsSlider cards={cardsContent} />
 
         <VantagesImages>
           <Image src={vantage1} width={210} alt="" />

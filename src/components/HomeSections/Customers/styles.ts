@@ -8,12 +8,30 @@ export const Container = styled.div`
 
   > div {
     background-color: white;
-    padding: 2rem;
+    /* padding: 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+
+    > div {
+      margin-top: 1rem;
+
+      @media (max-width: 768px) {
+        img {
+          width: 180px !important;
+          height: 450px;
+          object-fit: contain;
+        }
+      }
+    }
   }
 
   h1 {
     text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
   }
 
   footer {

@@ -1,31 +1,20 @@
 import Image from 'next/image'
 import { cardsContent } from './consts'
 import Woman from '../../../assets/woman.png'
-import { Card, Cards, Container, Content, Description } from './styles'
+import { Container, Content, Description } from './styles'
+import Slider from '@/components/HomeSections/MotivationSection/Slider'
 
 function MotivationSection() {
   return (
     <Container>
-      <Content className="ident-content">
+      <Content className="ident-content" id="motivation">
         <h1>
           <strong>Potencialize seu Sucesso</strong> com Equipamentos Estéticos
           Semi-Novos
         </h1>
         <h1>É só benefício</h1>
 
-        <Cards>
-          {cardsContent.map((item) => (
-            <Card key={item.title}>
-              <div>
-                <div className="icon-div">{item.icon}</div>
-                <div className="description-card">
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </Cards>
+        <Slider cards={cardsContent} />
 
         <Description>
           <h1>

@@ -41,52 +41,16 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
 
     h1 {
-      font-size: 1.2rem;
+      font-size: 1.7rem;
+      line-height: 1.8rem;
 
       &:nth-child(2) {
         margin-top: 0rem;
       }
     }
-  }
-`
-
-export const Cards = styled.div`
-  display: flex;
-  margin-top: 3rem;
-  gap: 1rem;
-`
-
-export const Card = styled.div`
-  width: 350px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: var(--golden-darker);
-  border-radius: 30px;
-
-  h3,
-  p {
-    color: white;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    font-weight: 600;
-  }
-
-  p {
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-  }
-
-  > div {
-    display: flex;
   }
 `
 

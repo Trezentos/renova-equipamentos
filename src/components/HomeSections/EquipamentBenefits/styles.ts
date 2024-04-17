@@ -6,19 +6,8 @@ export const Container = styled.div`
   background-color: white;
   padding: 4rem;
 
-  > div {
-    > div {
-      > div {
-        background-color: #e9e9e9;
-        border-radius: 15px;
-        /* height: 180px; */
-        padding: 1rem;
-      }
-    }
-  }
-
   @media (max-width: 768px) {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 `
 
@@ -44,72 +33,12 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
+    justify-content: flex-start;
+    gap: 2rem;
+
     h1 {
-      font-size: 1.4rem;
-      line-height: 1.4rem;
-      margin-bottom: 1rem;
-    }
-  }
-`
-
-export const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  > div:nth-child(1),
-  > div:nth-child(2) {
-    width: 49%;
-  }
-
-  > div:last-child {
-    margin-top: 1.4rem;
-  }
-
-  @media (max-width: 768px) {
-    gap: 1rem;
-
-    > div {
-      width: 100% !important;
-    }
-
-    > div:last-child {
-      margin-top: 0;
-    }
-  }
-`
-
-export const Card = styled.div`
-  display: flex;
-  align-items: center;
-
-  > div {
-    display: flex;
-    padding: 0.5rem 0.5rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    font-weight: 600;
-  }
-
-  @media (max-width: 768px) {
-    h3 {
-      font-size: 1rem;
-      line-height: 1rem;
-      font-weight: 600;
-    }
-
-    p {
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
-    }
-
-    > div {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+      font-size: 1.7rem;
+      line-height: 1.8rem;
     }
   }
 `
@@ -121,6 +50,15 @@ export const VantagesImages = styled.div`
   width: 500px;
 
   @media (max-width: 768px) {
-    display: none;
+    /* display: none; */
+    width: 100%;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 150px;
+      object-fit: contain;
+    }
   }
 `

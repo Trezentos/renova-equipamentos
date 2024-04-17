@@ -1,11 +1,30 @@
 import { Container } from './styles'
+import feedback1 from '../../../assets/feedback-1.jpg'
+import feedback2 from '../../../assets/feedback-2.jpg'
+import Image from 'next/image'
 
 function CustomersSection() {
   return (
     <>
       <Container>
         <div>
-          <h1>Oque dizem os nosso clientes?</h1>
+          <h1>Oque dizem os nossos clientes?</h1>
+          <div>
+            <Image src={feedback1} alt="" width={260} />
+            <Image src={feedback2} alt="" width={260} />
+            {/* <Slider
+              images={[
+                {
+                  id: '1',
+                  img: feedback1,
+                },
+                {
+                  id: '2',
+                  img: feedback2,
+                },
+              ]}
+            /> */}
+          </div>
         </div>
         <footer>
           <div>
