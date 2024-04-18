@@ -2,7 +2,12 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
-  height: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    circle at 50% 130%,
+    #827a58 4%,
+    rgba(0, 0, 0, 1) 50%
+  );
 
   img {
     position: absolute;

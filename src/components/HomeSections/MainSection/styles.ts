@@ -1,18 +1,19 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
-
-  h3,
-  strong {
-    color: white;
-  }
+  background: radial-gradient(
+    circle at 50% 130%,
+    #827a58 4%,
+    rgba(0, 0, 0, 1) 50%
+  );
 
   h3 {
     max-width: 550px;
     text-align: center;
+    color: white;
 
     span {
       color: #fae17c;
@@ -23,6 +24,7 @@ export const Container = styled.div`
   strong {
     text-align: center;
     margin-bottom: 1rem;
+    color: white;
   }
 
   > div {
