@@ -12,18 +12,6 @@ function CustomersSection() {
           <div>
             <Image src={feedback1} alt="" width={260} />
             <Image src={feedback2} alt="" width={260} />
-            {/* <Slider
-              images={[
-                {
-                  id: '1',
-                  img: feedback1,
-                },
-                {
-                  id: '2',
-                  img: feedback2,
-                },
-              ]}
-            /> */}
           </div>
         </div>
         <footer>
