@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, useState } from 'react'
+import React, { InputHTMLAttributes } from 'react'
 import { Container } from './styles'
 import { UseFormRegister } from 'react-hook-form'
 
