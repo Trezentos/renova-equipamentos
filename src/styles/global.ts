@@ -35,6 +35,10 @@ export const GlobalStyles = createGlobalStyle`
         line-height: 2.2rem;
     }
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
 
     strong {
         font-family: 'Poppins';

@@ -8,6 +8,14 @@ import {
   registerFormSchema,
 } from './schema'
 import Button from '@/components/Button'
+import { api } from '@/services/api'
+import { SEND_EMAIL } from '@/services/urls'
+import {
+  ERROR_SENDING_TEXT,
+  SUCCESS_SENDING_TEXT,
+  errorToast,
+  successToast,
+} from '@/utils/toast/toasts'
 
 function FormSection() {
   const {
@@ -22,7 +30,11 @@ function FormSection() {
   const onSubmit = async (data: RegisterFormData) => {
     try {
       console.log(data)
-    } catch (error: any) {}
+      await api.post(SEND_EMAIL, data)
+      successToast(SUCCESS_SENDING_TEXT)
+    } catch (error: any) {
+      errorToast(ERROR_SENDING_TEXT)
+    }
   }
 
   return (
@@ -53,14 +65,14 @@ function FormSection() {
           />
           <Input
             register={register}
-            name="Whatsapp"
+            name="whatsapp"
             type="text"
             label="Whatsapp"
             errorMessage={errors.whatsapp}
           />
           <Input
             register={register}
-            name="Instagram"
+            name="instagram"
             type="text"
             label="Instagram"
             errorMessage={errors.instagram}

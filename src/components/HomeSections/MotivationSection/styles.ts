@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background: radial-gradient(
     circle at 50% 130%,
     #827a58 4%,
@@ -87,6 +87,50 @@ export const Description = styled.div`
     h1,
     p {
       font-size: 1rem;
+    }
+  }
+`
+
+export const Footer = styled.footer`
+  z-index: 2;
+  height: 12rem;
+  background-color: #827a58 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    p {
+      line-height: 1rem;
+      max-width: 700px;
+      color: white;
+    }
+
+    a {
+      background-color: #24cb06;
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
     }
   }
 `
